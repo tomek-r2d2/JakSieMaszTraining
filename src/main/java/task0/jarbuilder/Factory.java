@@ -8,7 +8,5 @@ public class Factory {
         gen.generate();
         gen.print();
     }
-
-
 }
 

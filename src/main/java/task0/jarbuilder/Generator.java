@@ -72,6 +72,5 @@ public class Generator {
         printCollection(listPersons);
     }
 
-
 }
 
