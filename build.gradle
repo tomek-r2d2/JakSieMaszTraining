@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'application'
+sourceCompatibility = '1.8'
+version = '1.0'
+
+mainClassName = 'task0.jarbuilder.Factory'
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:23.5-jre'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+
+}
