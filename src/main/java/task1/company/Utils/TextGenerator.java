@@ -1,5 +1,7 @@
 package task1.company.Utils;
 
+import org.apache.commons.lang3.RandomStringUtils;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class TextGenerator {
@@ -11,9 +13,9 @@ public class TextGenerator {
     public String generateName(){
         int range = SampleData.names.length;
 
-        int randomNum = getRandomNum(range);
+        int randomNum = getRandomNum(range-1);
 
-        return (SampleData.names[randomNum]);
+        return (SampleData.names[randomNum]+ RandomStringUtils.random(3,"ASD"));
 
 
     }

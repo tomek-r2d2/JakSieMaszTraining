@@ -14,7 +14,7 @@ public class TeamManager extends Employee implements ManagerInter {
 
     public TeamManager(String name, Role role) {
         super(name, role, Position.Manager);
-        this.addTask(new Task("Zapoznaj się z polityką bezpieczeńśtwa"));
+        this.addTask(new Task("Read welocmePack for mamangers"));
     }
 
     @Override

@@ -8,7 +8,7 @@ public class Developer extends Employee {
 
     public Developer(String name,  Role role) {
         super(name, role, Position.Developer);
-        this.addTask(new Task("Zapoznaj się z polityką prywatoności"));
+        this.addTask(new Task("Read welocmePack for dev"));
 
 
     }
